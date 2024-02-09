@@ -1,3 +1,4 @@
+@import "callouts.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -21,4 +22,27 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-gray-700;
+}
+
+/* CSS to target the first h1 or h2 inside a Callout */
+.callout > h1:first-child,
+.callout > h2:first-child {
+  margin-top: 16px;
+}
+
+/* lists in markdown Content */
+li.mdli {
+  display: list-item;
+  margin-top: 1rem !important;
+  margin-bottom: 0.25rem !important;
+}
+
+ol:has(li.mdli) {
+  list-style-type: decimal !important;
+  list-style-position: outside;
+}
+
+ul:has(li.mdli) {
+  list-style-type: disc !important;
+  list-style-position: outside;
 }
