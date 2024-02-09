@@ -5,9 +5,10 @@ template:
     alt: SRSG logo
   description: Created by OxRSE team
   frontpage:
-    intro: This is the [UNIVERSE-HPC](https://universe-hpc.ac.uk/) training website for the [Southampton
-      Research Software Group](https://www.rse.ox.ac.uk/). Please see our list of past and upcoming UNIVERSE-HPC courses
+    intro: This is the [UNIVERSE-HPC](https://www.universe-hpc.ac.uk/) training website for the [Southampton
+      Research Software Group](https://rsgsoton.net). Please see our list of past and upcoming UNIVERSE-HPC courses
       on the left.
+
 
       This training material hosting infrastructure was developed by the [Oxford Research Software Engineering
       Group](https://www.rse.ox.ac.uk/)".
@@ -15,13 +16,13 @@ template:
 
       The material for these courses is generated from a
       set of [markdown materials](https://github.com/UNIVERSE-HPC/course-material) collated by
-      the [UNIVERSE-HPC project](https://universe-hpc.github.io),
+      the [UNIVERSE-HPC project](https://www.universe-hpc.ac.uk/),
       a joint collaboration between RSE teams at Oxford, Southampton,
       Imperial and Edinburgh, the Software Sustainability Institute and the
       Edinburgh Parallel Computing Centre.
 
 
-      These materials have been collated from a variety of sources published under different [CC-BY licenses](https://creativecommons.org/about/cclicenses/) . The
+      These materials have been collated from a variety of sources published under different [CC-BY licenses](https://creativecommons.org/about/cclicenses/). The
       attributions for each course and section are given on the relevant
       pages, alongside the exact license of the original work.
   footer: University of Southampton, [Southampton Research Software Group](https://rsgsoton.net/)
