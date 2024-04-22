@@ -5541,12 +5541,12 @@ __metadata:
   linkType: hard
 
 "follow-redirects@npm:^1.15.0":
-  version: 1.15.5
-  resolution: "follow-redirects@npm:1.15.5"
+  version: 1.15.6
+  resolution: "follow-redirects@npm:1.15.6"
   peerDependenciesMeta:
     debug:
       optional: true
-  checksum: 5ca49b5ce6f44338cbfc3546823357e7a70813cecc9b7b768158a1d32c1e62e7407c944402a918ea8c38ae2e78266312d617dc68783fac502cbb55e1047b34ec
+  checksum: a62c378dfc8c00f60b9c80cab158ba54e99ba0239a5dd7c81245e5a5b39d10f0c35e249c3379eae719ff0285fff88c365dd446fab19dee771f1d76252df1bbf5
   languageName: node
   linkType: hard
 
@@ -5998,11 +5998,12 @@ __metadata:
     front-matter: ^4.0.2
     isomorphic-dompurify: ^0.23.0
     isomorphic-git: ^1.21.0
-    jose: ^4.14.4
+    jose: ^4.15.5
     js-yaml: ^4.1.0
     marked: ^4.1.1
     next: ^13.4.9-canary.1
     next-auth: ^4.20.1
+    next-plausible: 3.12.0
     next-themes: 0.2.1
     openai: ^4.0.0
     postcss: ^8.4.19
@@ -6488,9 +6489,9 @@ __metadata:
   linkType: hard
 
 "ip@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "ip@npm:2.0.0"
-  checksum: cfcfac6b873b701996d71ec82a7dd27ba92450afdb421e356f44044ed688df04567344c36cbacea7d01b1c39a4c732dc012570ebe9bebfb06f27314bca625349
+  version: 2.0.1
+  resolution: "ip@npm:2.0.1"
+  checksum: d765c9fd212b8a99023a4cde6a558a054c298d640fec1020567494d257afd78ca77e37126b1a3ef0e053646ced79a816bf50621d38d5e768cdde0431fa3b0d35
   languageName: node
   linkType: hard
 
@@ -6995,10 +6996,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jose@npm:^4.11.4, jose@npm:^4.14.4, jose@npm:^4.15.1":
-  version: 4.15.4
-  resolution: "jose@npm:4.15.4"
-  checksum: dccad91cb3357f36423774a0b89ad830dd84b31090de65cd139b85488439f16a00f8c59c0773825e8a1adb0dd9d13ad725ad66e6ea33880ecb3959bb99e1ea5b
+"jose@npm:^4.11.4, jose@npm:^4.15.1, jose@npm:^4.15.5":
+  version: 4.15.5
+  resolution: "jose@npm:4.15.5"
+  checksum: 7dde76447c7707bd4b448f914b216f3858e701aa83f00447434252461af5b9e159dcbffb88badea3f9616739526763581267c9560622f0a058df8d68c86d7f79
   languageName: node
   linkType: hard
 
@@ -7185,13 +7186,13 @@ __metadata:
   linkType: hard
 
 "katex@npm:^0.16.0":
-  version: 0.16.9
-  resolution: "katex@npm:0.16.9"
+  version: 0.16.10
+  resolution: "katex@npm:0.16.10"
   dependencies:
-    commander: "npm:^8.3.0"
+    commander: ^8.3.0
   bin:
     katex: cli.js
-  checksum: 861194dfd4d86505e657f688fb73048d46ac498edafce71199502a35b03c0ecc35ba930c631be79c4a09d90a0d23476673cd52f6bc367c7a161854d64005fa95
+  checksum: 108e9d810e17840c43eef8d46171096f4cc97852bfd1e2dd1890d9b3435846816e3e98678a31d38bd064eb97eea83b18ff224cb65d5f9511b54ce7ff4359b591
   languageName: node
   linkType: hard
 
@@ -8501,6 +8502,17 @@ __metadata:
     nodemailer:
       optional: true
   checksum: 7cc49385123690ccb908f4552b75012717c4e45205a9fdc7cf48cd730dbcc7823a3e33e2a2073ecf1edae5c1980123f68678fd4af9198ea21ab0decb630cc71e
+  languageName: node
+  linkType: hard
+
+"next-plausible@npm:3.12.0":
+  version: 3.12.0
+  resolution: "next-plausible@npm:3.12.0"
+  peerDependencies:
+    next: ^11.1.0 || ^12.0.0 || ^13.0.0 || ^14.0.0
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: e59070f36b9c98d141b5e18e97ef91a90247b9ba13cccdae542d05248785011db4c7a24fd81d34691222deda3adfd39148c56a1beef335a8d6c4e5462ab8efae
   languageName: node
   linkType: hard
 
@@ -10810,16 +10822,16 @@ __metadata:
   linkType: hard
 
 "tar@npm:^6.1.11, tar@npm:^6.1.2":
-  version: 6.2.0
-  resolution: "tar@npm:6.2.0"
+  version: 6.2.1
+  resolution: "tar@npm:6.2.1"
   dependencies:
-    chownr: "npm:^2.0.0"
-    fs-minipass: "npm:^2.0.0"
-    minipass: "npm:^5.0.0"
-    minizlib: "npm:^2.1.1"
-    mkdirp: "npm:^1.0.3"
-    yallist: "npm:^4.0.0"
-  checksum: db4d9fe74a2082c3a5016630092c54c8375ff3b280186938cfd104f2e089c4fd9bad58688ef6be9cf186a889671bf355c7cda38f09bbf60604b281715ca57f5c
+    chownr: ^2.0.0
+    fs-minipass: ^2.0.0
+    minipass: ^5.0.0
+    minizlib: ^2.1.1
+    mkdirp: ^1.0.3
+    yallist: ^4.0.0
+  checksum: f1322768c9741a25356c11373bce918483f40fa9a25c69c59410c8a1247632487edef5fe76c5f12ac51a6356d2f1829e96d2bc34098668a2fc34d76050ac2b6c
   languageName: node
   linkType: hard
 
@@ -11172,11 +11184,11 @@ __metadata:
   linkType: hard
 
 "undici@npm:^5.22.1":
-  version: 5.28.1
-  resolution: "undici@npm:5.28.1"
+  version: 5.28.4
+  resolution: "undici@npm:5.28.4"
   dependencies:
-    "@fastify/busboy": "npm:^2.0.0"
-  checksum: dd34d0a0242757ac5673efbaa5e0ae2346a5855d1718ce2bb2dfa891a01fcf72c0b286fdcca602814e4894b154e7eeec015021f27a7751e6eaeb1b4c3a12387a
+    "@fastify/busboy": ^2.0.0
+  checksum: a8193132d84540e4dc1895ecc8dbaa176e8a49d26084d6fbe48a292e28397cd19ec5d13bc13e604484e76f94f6e334b2bdc740d5f06a6e50c44072818d0c19f9
   languageName: node
   linkType: hard
 
