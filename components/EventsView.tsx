@@ -39,7 +39,7 @@ const EventsView: React.FC<EventsProps> = ({ material, events }) => {
     cutOffDate.setMonth(cutOffDate.getMonth() - 2)
     setOldEvents(events.filter((event) => event.start < cutOffDate).length)
     setNewEvents(events.filter((event) => event.start >= cutOffDate).length)
-  }, [])
+  }, [events])
 
   const { events: currentEvents, mutate } = useEvents()
   if (currentEvents) {
@@ -159,12 +159,10 @@ const EventsView: React.FC<EventsProps> = ({ material, events }) => {
                     </Stack>
                   )}
                 </Timeline.Time>
-                <Timeline.Title>
-                  <Link href={`/event/${event.id}`}>{event.name}</Link>
-                </Timeline.Title>
-                <Timeline.Body>
-                  <Link href={`/event/${event.id}`}>{event.summary}</Link>
-                </Timeline.Body>
+                <Link href={`/event/${event.id}`}>
+                  <Timeline.Title>{event.name}</Timeline.Title>
+                  <Timeline.Body>{event.summary}</Timeline.Body>
+                </Link>
                 <EventActions event={event} />
               </Timeline.Content>
             </Timeline.Item>

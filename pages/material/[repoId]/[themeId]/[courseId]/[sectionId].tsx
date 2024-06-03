@@ -17,7 +17,8 @@ import Content from "components/content/Content"
 import Title from "components/ui/Title"
 import { Event } from "lib/types"
 import { PageTemplate, pageTemplate } from "lib/pageTemplate"
-import excludeVariablesFromRoot from "@mui/material/styles/excludeVariablesFromRoot"
+import LearningOutcomes from "components/content/LearningOutcomes"
+import revalidateTimeout from "lib/revalidateTimeout"
 
 type SectionComponentProps = {
   theme: Theme
@@ -51,6 +52,7 @@ const SectionComponent: NextPage<SectionComponentProps> = ({
       excludes={excludes}
     >
       <Title text={section.name} />
+      <LearningOutcomes learningOutcomes={section.learningOutcomes} />
       <Content markdown={section.markdown} theme={theme} course={course} section={section} />
     </Layout>
   )
@@ -117,7 +119,10 @@ export const getStaticProps: GetStaticProps = async (context) => {
     return { notFound: true }
   }
   removeMarkdown(material, section)
-  return { props: makeSerializable({ theme, course, section, events, material, pageInfo, repoUrl }) }
+  return {
+    props: makeSerializable({ theme, course, section, events, material, pageInfo, repoUrl }),
+    revalidate: revalidateTimeout,
+  }
 }
 
 export default SectionComponent

@@ -6,6 +6,7 @@ import { Material, getMaterial, removeMarkdown, getExcludes } from "lib/material
 import { EventFull as Event } from "lib/types"
 import { PageTemplate, pageTemplate } from "lib/pageTemplate"
 import ThemeCards from "components/ThemeCards"
+import revalidateTimeout from "lib/revalidateTimeout"
 
 type HomeProps = {
   material: Material
@@ -16,6 +17,7 @@ type HomeProps = {
 const Home: NextPage<HomeProps> = ({ material, events, pageInfo }) => {
   return (
     <Layout material={material} pageInfo={pageInfo}>
+      <h1 className="text-3xl font-bold text-center">Material Themes</h1>
       <ThemeCards material={material} />
     </Layout>
   )
@@ -39,6 +41,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
       events: makeSerializable(events),
       pageInfo: makeSerializable(pageInfo),
     },
+    revalidate: revalidateTimeout,
   }
 }
 
